@@ -1,0 +1,238 @@
+{
+  "crops": {
+    "tomato": {
+      "name": "Tomato",
+      "variety": "Cherry Tomato",
+      "plantingDate": "2024-01-15",
+      "expectedHarvest": "2024-04-15",
+      "growthStage": "flowering",
+      "optimalConditions": {
+        "soilMoisture": {
+          "min": 60,
+          "max": 80,
+          "ideal": 70,
+          "unit": "%"
+        },
+        "temperature": {
+          "min": 18,
+          "max": 26,
+          "ideal": 22,
+          "unit": "°C"
+        },
+        "humidity": {
+          "min": 60,
+          "max": 80,
+          "ideal": 70,
+          "unit": "%"
+        },
+        "phLevel": {
+          "min": 6.0,
+          "max": 6.8,
+          "ideal": 6.4,
+          "unit": "pH"
+        },
+        "lightIntensity": {
+          "min": 70,
+          "max": 90,
+          "ideal": 80,
+          "unit": "%"
+        },
+        "waterRequirement": {
+          "daily": 150,
+          "unit": "L/day"
+        }
+      },
+      "currentConditions": {
+        "soilMoisture": 45,
+        "temperature": 24,
+        "humidity": 65,
+        "phLevel": 6.8,
+        "lightIntensity": 75,
+        "lastWatering": "2024-01-20T14:30:00Z",
+        "waterUsedToday": 125
+      },
+      "analysis": {
+        "overallHealth": "good",
+        "healthScore": 78,
+        "recommendations": [
+          "Increase soil moisture - currently below optimal range",
+          "Temperature is within ideal range",
+          "Consider additional watering in the evening"
+        ],
+        "alerts": [
+          {
+            "type": "warning",
+            "message": "Soil moisture below optimal range",
+            "priority": "medium",
+            "timestamp": "2024-01-20T15:00:00Z"
+          }
+        ]
+      },
+      "historicalData": {
+        "lastWeek": [
+          {
+            "date": "2024-01-14",
+            "soilMoisture": 72,
+            "temperature": 21,
+            "humidity": 68,
+            "yield": "good"
+          },
+          {
+            "date": "2024-01-15",
+            "soilMoisture": 68,
+            "temperature": 23,
+            "humidity": 65,
+            "yield": "excellent"
+          },
+          {
+            "date": "2024-01-16",
+            "soilMoisture": 55,
+            "temperature": 25,
+            "humidity": 62,
+            "yield": "good"
+          },
+          {
+            "date": "2024-01-17",
+            "soilMoisture": 48,
+            "temperature": 26,
+            "humidity": 60,
+            "yield": "fair"
+          },
+          {
+            "date": "2024-01-18",
+            "soilMoisture": 42,
+            "temperature": 24,
+            "humidity": 63,
+            "yield": "fair"
+          },
+          {
+            "date": "2024-01-19",
+            "soilMoisture": 38,
+            "temperature": 23,
+            "humidity": 66,
+            "yield": "poor"
+          },
+          {
+            "date": "2024-01-20",
+            "soilMoisture": 45,
+            "temperature": 24,
+            "humidity": 65,
+            "yield": "fair"
+          }
+        ]
+      }
+    },
+    "lettuce": {
+      "name": "Lettuce",
+      "variety": "Romaine Lettuce",
+      "plantingDate": "2024-01-10",
+      "expectedHarvest": "2024-03-10",
+      "growthStage": "vegetative",
+      "optimalConditions": {
+        "soilMoisture": {
+          "min": 70,
+          "max": 85,
+          "ideal": 78,
+          "unit": "%"
+        },
+        "temperature": {
+          "min": 15,
+          "max": 20,
+          "ideal": 18,
+          "unit": "°C"
+        },
+        "humidity": {
+          "min": 70,
+          "max": 85,
+          "ideal": 78,
+          "unit": "%"
+        },
+        "phLevel": {
+          "min": 6.0,
+          "max": 7.0,
+          "ideal": 6.5,
+          "unit": "pH"
+        },
+        "lightIntensity": {
+          "min": 60,
+          "max": 75,
+          "ideal": 68,
+          "unit": "%"
+        },
+        "waterRequirement": {
+          "daily": 100,
+          "unit": "L/day"
+        }
+      },
+      "currentConditions": {
+        "soilMoisture": 82,
+        "temperature": 19,
+        "humidity": 76,
+        "phLevel": 6.3,
+        "lightIntensity": 65,
+        "lastWatering": "2024-01-20T08:00:00Z",
+        "waterUsedToday": 95
+      },
+      "analysis": {
+        "overallHealth": "excellent",
+        "healthScore": 92,
+        "recommendations": [
+          "Conditions are optimal for lettuce growth",
+          "Maintain current watering schedule",
+          "Monitor for any pest activity"
+        ],
+        "alerts": []
+      }
+    }
+  },
+  "systemSettings": {
+    "autoIrrigation": true,
+    "alertThresholds": {
+      "soilMoisture": {
+        "low": 30,
+        "high": 90
+      },
+      "temperature": {
+        "low": 10,
+        "high": 35
+      }
+    },
+    "irrigationSchedule": {
+      "morning": "06:00",
+      "evening": "18:00",
+      "duration": 15
+    }
+  },
+  "weatherForecast": {
+    "today": {
+      "temperature": 28,
+      "humidity": 72,
+      "condition": "Partly Cloudy",
+      "windSpeed": 12,
+      "precipitation": 0
+    },
+    "forecast": [
+      {
+        "date": "2024-01-21",
+        "temperature": 26,
+        "humidity": 75,
+        "condition": "Cloudy",
+        "precipitation": 20
+      },
+      {
+        "date": "2024-01-22",
+        "temperature": 24,
+        "humidity": 80,
+        "condition": "Light Rain",
+        "precipitation": 60
+      },
+      {
+        "date": "2024-01-23",
+        "temperature": 27,
+        "humidity": 70,
+        "condition": "Sunny",
+        "precipitation": 0
+      }
+    ]
+  }
+}
